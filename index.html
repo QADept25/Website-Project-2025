@@ -14,7 +14,7 @@
         font-family: Arial, sans-serif;
         display: flex;
         flex-direction: column;
-        height: 100vh;
+        min-height: 100vh;
       }
       .header {
         background: blue;
@@ -23,12 +23,16 @@
         justify-content: space-between;
         align-items: center;
         padding: 10px 20px;
-        height: 75px;
+        height: 70px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
       }
       .header img {
-        height: 75px;
-        width: 75px;
-        position: relative;
+        height: 70px;
+        width: 85px;
+        position: fixed;
         top: 0px;
         margin-left: -20px;
         z-index: 10;
@@ -36,7 +40,8 @@
       .nav {
         display: flex;
         gap: 50px;
-        margin-left: 200px;
+        margin-left: 100px;
+        position: fixed;
       }
       .nav a {
         color: white;
@@ -60,7 +65,6 @@
         padding: 10px;
         display: block;
       }
-
       .dropdown:hover .dropdown-content {
         display: block;
       }
@@ -70,6 +74,8 @@
         background: white;
         padding: 5px;
         border-radius: 5px;
+        position: fixed;
+        margin-left: 1670px;
       }
       .search-container input {
         border: none;
@@ -79,8 +85,8 @@
       .search-container .search-icon {
         width: 25px;
         height: 25px;
-        margin-left: 5px;
-        top: 0px;
+        margin-left: 150px;
+        top: 25px;
       }
       .banner {
         position: relative;
@@ -91,12 +97,13 @@
       .banner img {
         width: 100%;
         height: 83%;
-        object-fit: cover;
+        background-size: cover;
+        background-position: center;
       }
       .banner-text {
         position: absolute;
-        top: 35%;
-        left: 55%;
+        top: 40%;
+        left: 50%;
         transform: translate(-50%, -50%);
         font-size: 40px;
         font-weight: bold;
@@ -106,8 +113,8 @@
         color: white;
         display: flex;
         justify-content: space-between;
-        padding: 10px 20px;
-        margin-top: -185px;
+        padding: 0px 20px;
+        margin-top: auto;
       }
       .footer p:first-child {
         margin-left: 0%;
@@ -141,7 +148,7 @@
       </div>
     </div>
     <div class="banner">
-      <img src="Background.png" alt="tall buildings" />
+      <img src="background.png" alt="tall buildings" />
       <div class="banner-text">
         EXCELLENCE | QUALITY | CONSISTENCY <br />
         We continue to move forward.
